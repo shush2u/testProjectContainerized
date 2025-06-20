@@ -1,0 +1,8 @@
+# syntax=docker/dockerfile:1
+FROM ubuntu:22.04
+
+# install app dependencies
+
+COPY get-dependencies.sh /
+RUN chmod +x get-dependencies.sh
+RUN ./get-dependencies.sh
