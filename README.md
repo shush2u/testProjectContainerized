@@ -24,8 +24,12 @@ A example repository with a tiny web app made with python and the Flask framewor
    ```sh
    git clone https://github.com/shush2u/testProjectContainerized
    ```
-3. Install the [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension on Visual Studio Code. <br>
-4. Build and start the dev container by using the command palette (*F1* -> *Dev Containers: Open Folder in Container* -> select the project root directory)
-5. Voila!
+   NOTE: If you're cloning the repo with Git for Windows, you may encounter errors with Docker being unable to find the _get-dependencies.sh_ file. This happens due to line endings of the files being converted from LF to CRLF, and can be fixed by either manually changing the line endings back to LF, or by changing your git config to not do this conversion with the following command and cloning again:
+    ```sh
+   git config --global core.autocrlf false
+   ```
+4. Install the [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension on Visual Studio Code. <br>
+5. Build and start the dev container by using the command palette (*F1* -> *Dev Containers: Open Folder in Container* -> select the project root directory)
+6. Voila!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
